@@ -1,0 +1,17 @@
+name: New issue
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  comment-on-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Issue comment
+        uses: GrantBirki/comment@v2.0.10
+        with:
+          token: ${{ github.token }}
+          body: Thanks for opening an issue...
+          
