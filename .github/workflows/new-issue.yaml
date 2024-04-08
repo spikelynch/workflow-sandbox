@@ -8,6 +8,8 @@ on:
 jobs:
   comment-on-issue:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
       - name: Issue comment
         uses: GrantBirki/comment@v2.0.10
