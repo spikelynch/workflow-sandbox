@@ -13,6 +13,6 @@ jobs:
         uses: GrantBirki/comment@v2.0.10
         with:
           token: ${{ github.token }}
-          issue-number: ${{ github.event.number }}
+          issue-number: ${{ github.event.issue.number }}
           body: Thanks for opening an issue...
           
